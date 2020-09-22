@@ -50,6 +50,8 @@ class CryptoTests: XCTestCase {
         let signature = try? Crypto.sign(msg, privateKey: privateKey)
 
         XCTAssertNotNil(signature)
+        
+        
         XCTAssertEqual(signature?.hex, "3044022055f4b20035cbb2e85b7a04a0874c80d5822758f4e47a9a69db04b29f8b218f920220491e6a13296cfe2186da3a3ca565a179def3808b12d184553a8e3acfe1467273")
     }
     
